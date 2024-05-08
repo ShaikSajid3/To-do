@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    padding: 20px;
+    height: 100vh;
+    background: linear-gradient(135deg, purple, rgb(54, 54, 128));
+}
+
+.to-doapp {
+    width: 100%;
+    max-width: 600px;
+    margin: 100px auto 20px;
+    padding: 30px 50px 70px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.to-doapp h2 {
+
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.to-doapp img {
+    width: 50px;
+    height: 35px;
+    margin-left: 10px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: aliceblue;
+    margin-bottom: 25px;
+    border-radius: 30px;
+}
+
+input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    padding: 15px;
+}
+
+#input-box{
+    padding-right: 50px;
+}
+
+button {
+    padding: 15px 30px;
+    border-radius: 30px;
+    background-color: orangered;
+    border: none;
+    font-size: 16px;
+    color: cornsilk;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover{
+    background-color:forestgreen;
+}
+
+#list-container li {
+    list-style-type: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+#list-container li::before {
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.jpeg);
+    background-size: cover;
+    background-position: center;
+    top: 8px;
+    left: 7px;
+}
+
+#list-container li.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+
+#list-container li.checked::before {
+    background-image: url(images/checked.jpeg);
+}
+
+#list-container li span {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 5px;
+    right: 0;
+    font-size: 22px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+#list-container li span:hover {
+    background-color: rgba(88, 81, 81, 0.5);
+
+}
